@@ -111,6 +111,10 @@ function showProductDetails(title, description, imageSrc, price1, price2, info1,
   document.getElementById("modalPrice1").innerText = price1;
   document.getElementById("modalPrice2").innerText = price2;
 
+  // Clear existing content in modalInfo1 and modalInfo2 spans
+  document.getElementById("modalInfo1").innerHTML = "";
+  document.getElementById("modalInfo2").innerHTML = "";
+
   // Create SVG elements
   const checkIcon1 = createCheckIcon();
   const checkIcon2 = createCheckIcon();
