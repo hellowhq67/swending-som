@@ -1,0 +1,62 @@
+header {
+    background-color: #150553;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+section  h2 {
+    color: #310a9d;
+}
+
+h3 {
+    color: #555;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.app-card-brand{
+    width: 9.4rem;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid rgba(55, 52, 52, 0.477);
+
+}
+.app-card-brand img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

@@ -1,0 +1,624 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text: #03217a;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.app-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text);
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.app-title-2 {
+  font-size: 2rem;
+  text-align: center;
+  color: grey;
+  margin: 20px;
+  font-size: 1.3rem;
+}
+.mx-10 {
+  margin: 0px 10px;
+}
+.px-10 {
+  padding: 0px 10px;
+}
+.py-20 {
+  padding: 0px 2rem;
+}
+
+/*=========================================================================================*/
+
+/*=========================================================================================*/
+/*=========================================================================================*/
+
+.app-nav-header {
+  background: rgb(254, 252, 252);
+}
+.app-dropdown {
+  padding: 14px;
+}
+.app-flex-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.app-flex-item div {
+  font-weight: 600;
+}
+
+.app-dropdown-list {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+}
+.app-drop-menu {
+  position: absolute;
+  background: rgb(254, 252, 252);
+  padding: 10px;
+  transform: translateY(-200%);
+  transition: 0.3s ease-in;
+  font-weight: 500;
+  z-index: 99999;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.565);
+}
+.app-dropdown-list:hover .app-drop-menu {
+  transform: translateY(0);
+}
+.app-num-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: #ffff;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.app-drop-menu h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.app-drop-menu ul li {
+  list-style: square;
+}
+.navbar {
+  background: #ffff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+.navbar-brand {
+  color: #10439f !important;
+  font-weight: bold;
+  font-size: 2rem !important;
+  padding: 0px 20px;
+}
+.active {
+  text-decoration: underline !important;
+  transition: .3s ease;
+  
+}
+.nav-link {
+  color: #03217a !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+/*=========================================================================================*/
+/*=========================================================================================*/
+
+.app-banner-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 4rem;
+}
+.app-banner-flex h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bolder;
+}
+.app-btn {
+  background: rgb(212, 14, 14);
+  width: 200px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+}
+.app-banner h2 {
+  color: #fff;
+}
+.app-banner-flex img {
+  object-fit: contain;
+  width: 20rem;
+  height: 14rem;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+.app-banner-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.app-banner-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.app-banner-conteiner {
+  background: rgb(2, 22, 115);
+  background: -moz-linear-gradient(
+    177deg,
+    rgba(2, 22, 115, 1) 0%,
+    rgba(0, 0, 0, 1) 98%
+  );
+  background: -webkit-linear-gradient(
+    177deg,
+    rgba(2, 22, 115, 1) 0%,
+    rgba(0, 0, 0, 1) 98%
+  );
+  background: linear-gradient(
+    177deg,
+    rgba(2, 22, 115, 1) 0%,
+    rgba(0, 0, 0, 1) 98%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#021673",endColorstr="#000000",GradientType=1);
+  width: 90%;
+  height: 300px;
+}
+/*=========================================================================================*/
+
+.app-img-card {
+  width: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+/*=========================================================================================*/
+
+.app-img-card img {
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s ease-in-out;
+}
+.app-img-card:hover img {
+  transform: scale(1.1);
+}
+.app-card-desc {
+  background-color: #10439f;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  width: 100%;
+  font-size: 13px;
+}
+.app-card-desc h5 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.app-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  padding: 5px;
+}
+.app-card {
+  width: 240px;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 4px)
+      calc(100% - 4px) no-repeat,
+    linear-gradient(82deg, #182291 0%, #8d48e0 100%);
+  border-radius: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: c;
+}
+
+.app-card img {
+  width: 70px;
+}
+
+/*=========================================================================================*/
+.app-product-card {
+  width: 16rem;
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.app-product-card:hover img {
+  transform: scale(1.1);
+}
+.app-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-product-card img {
+  width: 180px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: 0.3s ease-in-out;
+  margin: 4px;
+}
+
+.app-product-card h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.app-desc {
+  color: var(--text);
+  padding: 10px;
+}
+.app-desc p {
+  font-size: 13px;
+  color: #1e272e;
+  padding: 0px;
+}
+.app-desc span {
+  font-size: 13px;
+  color: #1e272e;
+}
+.app-button {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(13, 51, 223);
+  background: -moz-linear-gradient(
+    177deg,
+    rgb(21, 44, 148) 0%,
+    rgba(0, 0, 0, 1) 98%
+  );
+  background: -webkit-linear-gradient(
+    177deg,
+    rgba(8, 46, 217, 0.602) 0%,
+    rgba(0, 0, 0, 1) 98%
+  );
+  background: linear-gradient(177deg, rgb(7, 49, 235) 0%, rgba(0, 0, 0, 1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#021673",endColorstr="#000000",GradientType=1);
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.app-button:hover {
+  background-color: rgba(
+    26,
+    60,
+    213,
+    0.8
+  ); /* Adjust the opacity or color as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: whitesmoke; /* Optional: Adding a box shadow for depth */
+}
+
+.app-blog-card {
+  border-radius: 10px 10px 0px 0px;
+  width: 16rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  overflow: hidden;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app-blog-card:hover img {
+  transform: scale(1.1);
+}
+.app-blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-blog-card img {
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px 10px 0px 0px;
+}
+.app-blog-desc {
+  padding: 10px;
+}
+.app-blog-desc h5 {
+  color: #1e272e;
+  font-weight: bold;
+  font-size: 16px;
+}
+.app-blog-desc p{
+  font-size: 13px;
+}
+
+.app-footer{
+  background-color: #202499;
+  color: #fff;
+  padding: 4rem;
+
+}
+.app-footer-wrapper{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+.app-footer-col{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.app-footer-col a{
+  text-decoration: none;
+  color: #fff;
+
+}
+.app-social{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.app-social li{
+  list-style: none;
+}
+@media screen and (max-width:   768px) {
+  .app-title{
+    font-size: 1rem;
+
+  }
+  .app-banner-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .app-banner-flex h1 {
+    font-size: 1rem;
+    color: white;
+    font-weight: bolder;
+  }
+  .app-btn {
+    background: rgb(212, 14, 14);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .app-banner h2 {
+    color: #fff;
+    font-size: 14px;
+  }
+  .app-banner-flex img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  }
+  .app-banner-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+  .app-banner-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app-banner-conteiner {
+    background: rgb(2, 22, 115);
+    background: -moz-linear-gradient(
+      177deg,
+      rgba(2, 22, 115, 1) 0%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    background: -webkit-linear-gradient(
+      177deg,
+      rgba(2, 22, 115, 1) 0%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    background: linear-gradient(
+      177deg,
+      rgba(2, 22, 115, 1) 0%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#021673",endColorstr="#000000",GradientType=1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+  }
+
+
+  .app-footer{
+    background-color: #202499;
+    color: #fff;
+    padding: 20px;
+  
+  }
+  .app-footer-wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+  
+  }
+.app-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  padding: 5px;
+}
+.app-card {
+  width: 150px;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 4px)
+      calc(100% - 4px) no-repeat,
+    linear-gradient(82deg, #182291 0%, #8d48e0 100%);
+  border-radius: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-card img {
+  width: 100%;
+}
+.app-img-card {
+  width: 9rem;
+  position: relative;
+  overflow: hidden;
+}
+/*=========================================================================================*/
+
+.app-img-card img {
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s ease-in-out;
+}
+.app-card-desc h5 {
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+}
+@media screen and (max-width: 992px) {
+  .app-banner-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .app-banner-flex h1 {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bolder;
+  }
+  .app-btn {
+    background: rgb(212, 14, 14);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 12px;
+
+  }
+  .app-banner h2 {
+    color: #fff;
+    font-size: 1rem;
+  }
+  .app-banner-flex img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  }
+  .app-banner-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+  .app-banner-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .app-banner-conteiner {
+    background: rgb(2, 22, 115);
+    background: -moz-linear-gradient(
+      177deg,
+      rgba(2, 22, 115, 1) 0%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    background: -webkit-linear-gradient(
+      177deg,
+      rgba(2, 22, 115, 1) 0%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    background: linear-gradient(
+      177deg,
+      rgba(2, 22, 115, 1) 0%,
+      rgba(0, 0, 0, 1) 98%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#021673",endColorstr="#000000",GradientType=1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+  }
+  .app-card {
+    width: 270px;
+    background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 4px)
+        calc(100% - 4px) no-repeat,
+      linear-gradient(82deg, #182291 0%, #8d48e0 100%);
+    border-radius: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-card img {
+    width: 100px;
+  }
+}

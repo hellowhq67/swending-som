@@ -1,0 +1,100 @@
+.app-card-title{
+    font-size: 15px !important;
+    color: rgb(8, 6, 109)
+    ;
+    font:  sans-serif;
+    font-weight: bold;
+}
+.app-product-card-2{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 15rem;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+.app-product-card-2 img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+
+}
+.app-image-col{
+    background: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+.badge-app{
+    position: absolute;
+    left: 0; 
+    background: rgb(123, 0, 255);
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.app-desc-col{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.modal-card{
+    display: flex !important;
+    width: 800px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.close{
+    position: absolute;
+    top: 5%;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    right: 5%;
+    cursor: pointer;
+}
+#modalImage{
+    width: 270px;
+
+    background-color: aliceblue;
+}
+.modal-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.modal-card-close{
+    display: none;
+}
+@media screen and (max-width:   768px) {
+    .modal-card{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .modal-desc{
+        width: 100%;
+    }
+    .close{
+        position: absolute;
+        top: 0%;
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+        right: 5%;
+    }
+}
